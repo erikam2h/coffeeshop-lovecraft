@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up to Trip travel</title>
+    <style>
+      body {
+        background-color: honeydew;
+      }
+      h1,
+      h2,
+      p {
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #signup {
+        text-align: center;
+        background-color: #fff;
+        padding: 30px;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      footer {
+        background-color: darkslategrey;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="trip-travel.png"
+        alt="travel logo"
+        width="200 px"
+        class="center"
+      />
+      <h1>Sign up to Trip travel</h1>
+    </header>
+    <main>
+      <h2>Incredible trip sugestions and the best offers</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+        voluptatem soluta, aspernatur architecto magnam fuga.
+      </p>
+
+      <section id="signup">
+        <form>
+          <!--Adress Info-->
+          <fieldset>
+            <legend><h2>Your Contact information</h2></legend>
+            <label for="name">First name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              autocomplete="given-name"
+              placeholder="Enter your name"
+            /><br /><br />
+            <label for="last-name">Last name:</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              required
+            /><br /><br />
+            <label
+              >Street: <input type="text" name="street" id="street" required
+            /></label>
+            <br /><br />
+            <label
+              >House Number:
+              <input
+                type="number"
+                name="house-number"
+                id="house-number"
+                required
+            /></label>
+            <br /><br />
+            <label
+              >Zipcode
+              <input type="number" name="zipcode" id="zipcode" required
+            /></label>
+            <br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+            <label for="message">Password:</label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              required
+            /><br /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              <h2>Select your desire destiny</h2>
+            </legend>
+            <select name="destiny" id="destiny" required>
+              <option value="">__</option>
+              <option value="Paris">Paris</option>
+              <option value="Barcelona">Barcelona</option>
+              <option value="Amsterdam">Amsterdam</option>
+              <option value="Berlin">Berlin</option>
+              <option value="Rome">Rome</option>
+              <option value="Belgium">Belgium</option>
+              <option value="surprise">Surprise me</option>
+            </select>
+          </fieldset>
+          <!--Trip details-->
+          <fieldset>
+            <legend>
+              <h2>Details of your trip</h2>
+            </legend>
+            <p>Who do you plan to travel with on your next adventure?</p>
+            <input type="radio" name="travel" id="travel-alone" />
+            <label for="travel-alone">Alone</label>
+            <input type="radio" name="travel" id="travel-couple" />
+            <label for="travel-couple">In Couple</label>
+            <input type="radio" name="travel" id="travel-family" />
+            <label for="travel-family">In family</label>
+
+            <p>How long will be your trip?</p>
+            <input type="radio" name="travel-time" id="travel-days" />
+            <label for="travel-days-">4 days</label>
+            <input type="radio" name="travel-time" id="travel-week" />
+            <label for="travel-couple">One week</label>
+            <input type="radio" name="travel-time" id="travel-2weeks" />
+            <label for="travel-2weeks">Two weeks</label>
+            <input type="radio" name="travel-time" id="travel-no" />
+            <label for="travel-no">I don't know</label>
+
+            <p>According to your budget, how would you describe your trip?</p>
+            <input type="radio" name="travel-budget" id="travel-low" />
+            <label for="travel-low-">Backpacker</label>
+            <input type="radio" name="travel-budget" id="travel-medium" />
+            <label for="travel-medium">Just normal</label>
+            <input type="radio" name="travel-budget" id="travel-confort" />
+            <label for="travel-confort">Confort before budget</label>
+            <input type="radio" name="travel-budget" id="travel-luxury" />
+            <label for="travel-luxury">You only live once 💸</label>
+          </fieldset>
+          <!--Terms-->
+          <fieldset>
+            <legend><h2>Terms & conditions</h2></legend>
+            <p>
+              <b>Do you agree<a href="#"> our terms</a></b>
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quibusdam soluta consectetur error id molestias minus laudantium
+              odio iste inventore, laborum ex quam, eaque temporibus libero rem
+              repudiandae sapiente, rerum quas.
+            </p>
+            <input type="checkbox" name="terms" id="terms" required />
+            <label for="terms">I acept the terms</label>
+            <input
+              type="checkbox"
+              name="newsletter"
+              id="newsletter"
+              required
+              checked
+            />
+            <label for="newsletter"
+              >Suscribe to our weekly newsletter and recive the best travel
+              offers</label
+            >
+          </fieldset>
+          <button style="margin-top: 20px">Submit</button>
+          <button type="reset" style="margin-top: 20px">Reset</button> <br />
+        </form>
+      </section>
+    </main>
+    <footer>This page was built by Erika Mora</footer>
+  </body>
+</html>
